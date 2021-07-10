@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace TiTech.Repositories
 {
-    interface ICategoriaRepository
+    public interface ICategoriaRepository
     {
+        public IEnumerable<Categoria> Categorias { get; }
     }
 }

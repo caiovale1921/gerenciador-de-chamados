@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace TiTech.Repositories
 {
-    interface IClienteRepository
+    public interface IClienteRepository
     {
+        public IEnumerable<Cliente> Clientes { get; }
     }
 }

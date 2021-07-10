@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace TiTech.Repositories
 {
-    interface ISituacaoRepository
+    public interface ISituacaoRepository
     {
+        public IEnumerable<Situacao> Situacaos { get; set; }
     }
 }

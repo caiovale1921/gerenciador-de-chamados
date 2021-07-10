@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace TiTech.Repositories
 {
-    interface IFuncionarioRepository
+    public interface IFuncionarioRepository
     {
+        public IEnumerable<Funcionario> Funcionarios { get; }
     }
 }

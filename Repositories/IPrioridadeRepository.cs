@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace TiTech.Repositories
 {
-    interface IPrioridadeRepository
+    public interface IPrioridadeRepository
     {
+        public IEnumerable<Prioridade> Prioridades { get; set; }
     }
 }
