@@ -1,7 +1,7 @@
 # Sistema de gerenciameto de chamados - SLA
-# Empresa fictícia "TiTech"
+Empresa fictícia "TiTech"
 
-## Sistema ira genereciar os chamados de uma empresa de tecnologia
+Sistema ira genereciar os chamados de uma empresa de tecnologia
 
 # Ferramentas
 
