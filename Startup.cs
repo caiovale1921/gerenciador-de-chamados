@@ -10,6 +10,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using TiTech.Context;
+using TiTech.Repositories;
+using TiTech.Repositories.Interfaces;
 
 namespace TiTech
 {
@@ -28,6 +30,14 @@ namespace TiTech
             services.AddDbContext<AppDbContext>(option =>
             option.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddControllersWithViews();
+
+            //Servicos de acesso a dados
+            services.AddTransient<IChamadoRepository, ChamadoRepository>();
+            services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+            services.AddTransient<IClienteRepository, ClienteRepository>();
+            services.AddTransient<IFuncionarioRepository, FuncionarioRepository>();
+            services.AddTransient<IPrioridadeRepository, PrioridadeRepository>();
+            services.AddTransient<ISituacaoRepository, SituacaoRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
